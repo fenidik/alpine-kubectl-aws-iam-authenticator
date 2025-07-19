@@ -4,7 +4,7 @@ ARG TARGETARCH
 
 # Use environment variables for easier maintenance
 ENV KUBECTL_VERSION="v1.29.1"
-ENV HELM_VERSION="3.14.2"
+ENV HELM_VERSION="3.18.4"
 ENV AWS_IAM_AUTHENTICATOR_URL="https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.6.11/aws-iam-authenticator_0.6.11_linux_${TARGETARCH}"
 
 ADD ${AWS_IAM_AUTHENTICATOR_URL} /usr/local/bin/aws-iam-authenticator
